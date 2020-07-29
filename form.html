@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset='utf-8'>
+    <title>회원가입</title>
+</head>
+<body>
+
+    <form action="member.php" method="POST">
+        <fieldset>
+            <legend>회원가입</legend>
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="pw">패스워드</label>
+            <input type="password" id="pw" name="pw"><br>
+            <label for="gender">성별</label>
+            <input type="radio" id="gender" name="gender" value="0" checked>남
+            <input type="radio" name="gender" value="1">여<br>
+            <label for="hobby">취미</label>
+            <input type="checkbox" id="hobby" name="hobby1">등산 
+            <input type="checkbox" name="hobby2">낚시 
+            <input type="checkbox" name="hobby3">프로그래밍 
+            <input type="checkbox" name="hobby4">게임 
+            <input type="checkbox" name="hobby5">음악 <br>
+            <label for="birth">생일</label>
+            <input type="date" id="birth" name="birth"><br>
+            <label for="job">직업</label>
+            <select id="job" name="job">
+                <option>학생</option>
+                <option>회사원</option>
+                <option>자영업</option>
+                <option>실업</option>
+            </select><br>
+            <label for="intro">자기소개</label><br>
+            <textarea rows="5" cols="80" name="intro" id="intro"></textarea><br>
+            <label for="profile">프로필이미지</label>
+            <input type="file" id="profile" name="profile"><br>
+            <input type="submit" value="회원가입">
+            <button>다시쓰기</button>
+        </fieldset>
+    </form>
+</body>
+</html>
